@@ -13,5 +13,20 @@
     background-position: center center;
     border-color: #000aff;
     border-style: solid;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 224px;
+    height: 52px;
+    &:hover {
+        background-color: #000aff;
+        color: white;
+    }
+    &_blue {
+        background-color: #000aff;
+        color: white;
+        &:hover {
+            background-color: white;
+            color: #000aff;
+        }
+    }
 }

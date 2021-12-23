@@ -1,13 +1,36 @@
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     &__btn {
         width: 136px;
         height: 26px;
     }
-
 }
 .number {
-
+    color: #0a113c;
+    font-size: 16px;
+    font-family: 'MuseoSans',Arial,sans-serif;
+    line-height: 1.18;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease; 
+    &:hover {
+        opacity: 0.8;
+    }
 }
 .mail {
-
+    color: #0a113c;
+    font-size: 12px;
+    font-family: 'MuseoSans',Arial,sans-serif;
+    line-height: 1.15;
+    font-weight: 400;
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease; 
+    &:hover {
+        opacity: 0.8;
+    }
 }
