@@ -1,0 +1,17 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000aff;
+    font-size: 10px;
+    font-family: 'MuseoSans',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    border-width: 1px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: #000aff;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
