@@ -1,9 +1,78 @@
 .header {
     background-color: white;
+    position: relative;
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 0;
+    }
+    &__logo {
+        flex-grow: 1;
+        &_mobnav {
+            @media (min-width:949px) {
+                display: none;
+            }
+        }
+    }
+    &__cross {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/cross.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    &__mobnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 2;
+        transition: 0.3s ease;
+        @media (max-width:949px) {
+            display: flex;
+            position: absolute;
+            z-index: 11;
+            flex-direction: column;
+            top: 0;
+            right: -100%;
+            background-color: #0a113c;
+            height: 100vh;
+            width: 260px;
+            padding: 48px 40px 38px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 300vw;
+                height: 100vh;
+                background-color: black;
+                opacity: 0.3;
+                right: 0;
+                top: 0;
+                z-index: -1;
+                opacity: 0;
+                pointer-events: none;
+                transition: 0.2s ease;
+            }
+            &.active {
+                right: 0;
+               &:before{
+                   opacity: 0.3;
+               }
+            }
+        }
+    }
+    &__nav {
+        
+    }
+    &__burger {
+        @media (min-width:950px) {
+            display: none;
+        }
     }
 }

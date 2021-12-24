@@ -1,6 +1,10 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    @media (max-width:949px) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
     &__elem {
         display: block;
         padding: 0 10px;
@@ -11,6 +15,15 @@
         font-weight: 400;
         transition: 0.3s ease;
         cursor: pointer;
+        @media (max-width:949px) {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding: 0;
+            &:first-child {
+                opacity: .7;
+            }
+        }
         &:hover {
             opacity: 0.8;
         }

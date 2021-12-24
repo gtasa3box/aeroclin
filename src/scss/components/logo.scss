@@ -6,4 +6,7 @@
     background-repeat: no-repeat;
     width: 154px;
     height: 48px;
+    &_white {
+        background-image: url(../img/logo_white.svg);
+    }
 }

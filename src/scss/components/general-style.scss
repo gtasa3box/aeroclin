@@ -1,3 +1,6 @@
 body {
     background-color: #F5F7FA;
+    &.over {
+        overflow: hidden;
+    }
 }

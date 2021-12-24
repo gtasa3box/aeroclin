@@ -1,3 +1,15 @@
+//mob-nav
+$('.burger').on('click', function(){
+  $(this).addClass('active')
+  $($(this).data('target')).toggleClass('active')  
+  $('body').addClass('over')
+});
+$('.header__cross').on('click', function(){
+  $($(this).data('target')).toggleClass('active')
+  $('body').removeClass('over')
+});
+
+//slider-card
 $('.slider-card__slider').slick({
     dots: false,
     infinite: true,
@@ -8,8 +20,8 @@ $('.slider-card__slider').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -17,8 +29,8 @@ $('.slider-card__slider').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
