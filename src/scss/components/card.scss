@@ -1,0 +1,58 @@
+.card {
+    border-radius: 7px;
+    border: 1px solid #BCC6DB;
+    overflow: hidden;
+    background-color: white;
+    width: 260px;
+    height: 453px;
+    padding: 10px;
+    &__img {
+        display: block;
+        width: 238px;
+        height: 240px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #F5F7FA;
+        border-radius: 7px;
+    }
+    &__title {
+        color: #0a113c;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'MuseoSans', sans-serif;
+        line-height: 1.35;
+        margin: 8px 0;
+    }
+    &__info {
+        p {
+            color: #0a113c;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-family: 'MuseoSans',sans-serif;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__price {
+        color: #0a113c;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'MuseoSans',Arial,sans-serif;
+        line-height: 1.35;
+        margin: 15px 0;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn {
+        width: 114px;
+        height: 35px;
+        font-size: 13px;
+        font-weight: 500;
+        
+    }
+}
