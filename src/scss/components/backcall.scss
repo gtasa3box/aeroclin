@@ -1,0 +1,131 @@
+.backcall {
+    padding: 60px 0;
+    background-color: white;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:899px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin-top: 20px;
+        @media (max-width:899px) {
+            width: 100%;
+        }
+        &__file {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-family: 'MuseoSans',Arial,sans-serif;
+            line-height: 1;
+            font-weight: 400;
+            border-width: 1px;
+            border-radius: 7px;
+            background-color: #000aff;
+            color: white;
+            background-position: center center;
+            border-color: #000aff;
+            border-style: solid;
+            transition: 0.3s ease;
+            cursor: pointer;
+            width: 150px;
+            height: 35px;
+            &:hover {
+                color: #000aff;
+                background-color: #ffffff; 
+            }
+        }
+        input[type=file] {
+            display: none;
+        }
+        p {
+            color: #000;
+            font-family: 'MuseoSans',sans-serif;
+            opacity: 0.7;
+            font-size: 14px;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+        textarea {
+            resize: none;
+            border: 1px solid #bcc6db;
+            color: #000;
+            font-family: 'MuseoSans',Arial,sans-serif;
+            background-color: #fff;
+            border-radius: 7px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            font-size: 16px;
+            font-weight: 400;
+            height: 85px;
+            line-height: 1.33;
+            margin-bottom: 20px;
+            padding: 20px 30px;
+        }
+        input[type=name],input[type=number] {
+            color: #000;
+            font-family: 'MuseoSans',Arial,sans-serif;
+            border: 1px solid #bcc6db;
+            background-color: #fff;
+            border-radius: 7px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            font-size: 16px;
+            font-weight: 400;
+            height: 70px;
+            line-height: 1.33;
+            margin-bottom: 20px;
+            padding: 0 30px;
+        }
+        &__btn {
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    &__map {
+        width: 770px;
+        position: relative;
+        @media (min-width:900px) and (max-width:1099px) {
+            width: 45%;
+        }
+        @media (max-width:899px) {
+            width: 100%;
+            height: 500px;
+        }
+        &-info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            width: 290px;
+            height: 240px;
+            border-radius: 7px;
+            padding: 20px;
+            font-family: 'MuseoSans',sans-serif;
+            color: #0a113c;
+            font-size: 14px;
+            line-height: 1.3;
+            font-weight: 400;
+            span {
+                font-weight: 700;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

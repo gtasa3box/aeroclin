@@ -1,0 +1,98 @@
+.how-working {
+    padding: 60px 0;
+    position: relative;
+    background-color: white;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/how-working/map.png);
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        left: 0;
+    }
+    &__title {
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        @media (max-width:600px) {
+            justify-content: center;
+        }
+    }
+    &__elem {
+        width: 290px;
+        position: relative;
+        &:not(:last-child) {
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/how-working/arrow.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 22px;
+                height: 28px;
+                right: -60px;
+                top: 22%;
+                @media (min-width:900px) and (max-width:1099px) {
+                    right: -15px;
+                }
+                @media (max-width:899px) {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width:899px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__img {
+        display: block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+    }
+    &__text {
+        color: #0a113c;
+        font-size: 24px;
+        font-family: 'MuseoSans',Arial,sans-serif;
+        line-height: 1.3;
+        font-weight: 700;
+        text-align: center;
+        margin: 10px 0;
+    }
+    &__info {
+        color: #0a113c;
+        font-size: 15px;
+        font-family: 'MuseoSans',Arial,sans-serif;
+        line-height: 1.3;
+        font-weight: 400;
+        text-align: center;
+        a {
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__btn {
+        margin: 20px auto 0;
+        font-size: 15px;
+    }
+}
