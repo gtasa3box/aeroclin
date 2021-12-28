@@ -19,4 +19,11 @@
         font-weight: 400;
         text-align: center;
     }
+    &_left {
+        align-items: flex-start;
+        h2 {
+            text-align: left;
+            font-size: 36px;
+        }
+    }
 }
