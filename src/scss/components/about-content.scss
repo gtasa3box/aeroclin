@@ -1,0 +1,33 @@
+.about-content {
+    &__content {
+        display: flex;
+        padding: 100px 0;
+        @media (max-width:1099px) {
+            flex-direction: column;
+            padding: 80px 0;
+        }
+        @media (max-width:600px) {
+            padding: 40px 0;
+        }
+    }
+    &__title {
+        flex: none;
+        width: 30%;
+        @media (max-width:1099px) {
+            width: 100%;
+        }
+    }
+    &__text {
+        color: #0a113c;
+        font-size: 18px;
+        line-height: 1.55;
+        font-weight: 400;
+        font-family: 'MuseoSans',sans-serif;
+        @media (max-width:600px) {
+            font-size: 14px;
+        }
+        strong {
+            font-weight: 700;
+        }
+    }
+}
