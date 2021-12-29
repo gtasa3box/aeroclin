@@ -1,0 +1,131 @@
+.footer {
+    background-color: #090f35;
+    position: relative;
+    &__content {
+        padding: 20px 0 60px;
+        display: flex;
+        justify-content: space-between;
+        @media (min-width:601px) and (max-width:899px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__request {
+        display: flex;
+        flex-direction: column;
+        @media (max-width:600px) {
+            align-items: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+            @media (max-width:600px) {
+                margin-bottom: 100px;
+            }
+        }
+        p {
+            color: #ffffff;
+            font-size: 12px;
+            font-family: 'MuseoSans',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+    }
+    &__navs {
+        display: flex;
+        @media (min-width:601px) and (max-width:899px) {
+            order: 1;
+            flex-direction: column;
+        }
+        @media (max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        @media (max-width:600px) {
+            align-items: center;
+        }
+        &:first-child {
+            margin-right: 30px;
+            @media (min-width:601px) and (max-width:899px) {
+                margin-right: 0;
+                margin-top: 20px;
+            }
+            @media (max-width:600px) {
+                margin-right: 0;
+            }
+        }
+        &-elem {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'MuseoSans',Arial,sans-serif;
+            line-height: 2;
+            font-weight: 400;
+            cursor: pointer;
+            @media (max-width:600px) {
+                text-align: center;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (min-width:601px) and (max-width:899px) {
+            flex-direction: row;
+            align-items: initial;
+        }
+        @media (max-width:600px) {
+            align-items: center;
+            position: absolute;
+            top: 87px;
+        }
+    }
+    &__mails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (min-width:601px) and (max-width:899px) {
+            margin-left: 80px;
+        }
+        @media (max-width:600px) {
+            align-items: center;
+        }
+    }
+    .number {
+        @media (min-width:601px) and (max-width:899px) {
+            font-size: 16px;
+        }
+    }
+    .mail {
+        margin-top: 15px;
+        @media (min-width:601px) and (max-width:899px) {
+            margin-top: 0;
+        }
+    }
+    &__btn {
+        width: 136px;
+        height: 26px;
+        font-size: 10px;
+        background-color: #090f35;
+        border-color: #ffffff;
+        color: white;
+        font-weight: 700;
+        @media (max-width:600px) {
+            display: none;
+        }
+        &:hover {
+            background-color: white;
+            color: #090f35;
+        }
+    }
+}

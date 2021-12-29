@@ -9,6 +9,11 @@
             justify-content: center;
         }
     }
+    &__form {
+        @media (max-width:899px) {
+            width: 100%;
+        }
+    }
     &-form {
         display: flex;
         flex-direction: column;

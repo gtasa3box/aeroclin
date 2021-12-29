@@ -27,6 +27,9 @@
         font-size: 13px;
         line-height: 1.55;
     }
+    &_white {
+        color: white;
+    }
     &:hover {
         opacity: 0.8;
     }
@@ -44,6 +47,9 @@
     @media (max-width:949px) {
         color: white;
         margin-top: 25px;
+    }
+    &_white {
+        color: white;
     }
     &:hover {
         opacity: 0.8;
