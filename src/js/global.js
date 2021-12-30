@@ -76,5 +76,22 @@ $('.news-popup__slider').slick({
     }
   ]
 });
-//load slider popup
-$('.news-popup').slick('setPosition'); 
+
+//popup-catalog-slider
+
+$('.slider-popup-catalog').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+
