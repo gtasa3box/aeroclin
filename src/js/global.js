@@ -89,7 +89,7 @@ $('.slider-popup-catalog').slick({
 $('.slider-nav').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.slider-popup-catalog',
   dots: false,
   centerMode: true,
   focusOnSelect: true
