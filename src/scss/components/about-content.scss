@@ -29,5 +29,16 @@
         strong {
             font-weight: 700;
         }
+        &_dop {
+            strong {
+                display: block;
+                margin: 20px 0 10px;
+            }
+            ul {
+                list-style: disc;
+                padding-left: 20px;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
