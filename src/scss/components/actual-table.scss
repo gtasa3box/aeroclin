@@ -1,0 +1,23 @@
+.actual-table {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    &__elem {
+        background-color: white;
+        border: 1px solid black;
+        border-bottom: 0;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'MuseoSans';
+        line-height: 1.55;
+        &:last-child {
+            border-bottom: 1px solid black;
+        }
+        &:nth-child(even) {
+            background-color: #eeeeee;
+        }
+    }
+}
