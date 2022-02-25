@@ -1,8 +1,31 @@
 <!-- popup-forms -->
 @include('popup-forms.html')
-
+<div class="smart-basket__wrapper"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="smartbasket/js/smartbasket.js"></script>
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'product__element',
+				buttonAddToBasket: 'product__add-to-cart-button',
+				productPrice: 'product__price-number',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'header__basket-min',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: 'img/basket.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://smartlanding.biz',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
